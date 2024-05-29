@@ -1,9 +1,9 @@
 import pdfplumber, pandas as pd, csv, re
 
 sources = [
-    "C://Users/GAUTHAM SHARMA/Downloads/sample1.pdf",
-    "C://Users/GAUTHAM SHARMA/Downloads/sample2.pdf",
-    "C://Users/GAUTHAM SHARMA/Downloads/sample3.pdf"
+    "sample1.pdf",
+    "sample2.pdf",
+    "sample3.pdf"
 ]
 for source in sources:
     with pdfplumber.open(source) as pdf:
