@@ -80,11 +80,13 @@ def CSVWrite(output_file, Name, InvoiceNumber, total_text, df):
 
 root = tk.Tk()
 
-root.title("PDF to CSV Converter")
 select_button = tk.Button(root, text="Select PDFs and Convert to CSV", command=select_pdfs)
-select_button.pack(pady=20)
+root.title("PDF to CSV Converter")
+select_button.pack(pady=20, padx=20)
 
 sources, output_file = select_pdfs()
 for i in sources:
     Name, InvoiceNumber, total_text, df = main(i)
     CSVWrite(output_file, Name, InvoiceNumber, total_text, df)
+
+messagebox.showinfo("Success", f"Data has been extracted and saved to the CSV file.")
