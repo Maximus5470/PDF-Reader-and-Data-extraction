@@ -1,2 +1,9 @@
-The code extracts the contents of the table along with the name, invoice number and total amount. It then writes all the contents into a csv file
-Yes
+# PDF Reader and Data Extraction
+
+This project extracts data from PDF files, specifically focusing on extracting contents from tables along with associated metadata such as name, invoice number, and total amount. The extracted data is then written into a CSV file.
+
+## Features
+
+- Extract contents of tables from PDF files
+- Retrieve metadata such as name, invoice number, and total amount
+- Write extracted data into a CSV file
